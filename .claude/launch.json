@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "veo", "runtimeExecutable": "python3", "runtimeArgs": ["-m","http.server","4655","--directory","/tmp/veo-preview"], "port": 4655 }
+  ]
+}
