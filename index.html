@@ -259,6 +259,16 @@ section{position:relative}
 .apply .eyebrow{color:var(--tan-soft)}
 .apply .eyebrow::before{background:var(--tan-soft)}
 .form-card{background:var(--cream);border-radius:24px;padding:38px 34px;box-shadow:0 40px 90px -30px rgba(0,0,0,.5)}
+/* offer card */
+.offer-card{background:var(--cream);border-radius:24px;padding:40px 36px;box-shadow:0 40px 90px -30px rgba(0,0,0,.5);position:relative}
+.offer-tag{display:inline-block;font-size:11.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--tan);background:rgba(166,126,98,.12);padding:7px 14px;border-radius:100px;margin-bottom:20px}
+.offer-card h3{font-size:1.8rem;margin-bottom:8px;color:var(--brown)}
+.offer-sub{font-size:.95rem;color:var(--muted);margin-bottom:24px;line-height:1.55}
+.offer-list{list-style:none;display:flex;flex-direction:column;gap:13px;margin-bottom:30px;padding-top:24px;border-top:1px solid var(--line)}
+.offer-list li{display:flex;align-items:flex-start;gap:12px;font-size:.98rem;color:var(--brown)}
+.offer-list .oc{width:22px;height:22px;border-radius:50%;background:var(--brown);color:var(--cream);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px;margin-top:1px}
+.offer-btn{width:100%;font-size:16px;padding:18px 30px}
+.offer-note{font-size:12.5px;color:var(--muted);text-align:center;margin-top:16px;line-height:1.5}
 .form-card h3{font-size:1.5rem;margin-bottom:6px}
 .form-card .fsub{font-size:14px;color:var(--muted);margin-bottom:24px}
 .field{margin-bottom:16px}
@@ -311,7 +321,7 @@ footer{background:var(--cream-2);padding:60px 0 36px;border-top:1px solid var(--
       <a href="#para-quem">Para quem é</a>
       <a href="#mayra">Mayra</a>
       <a href="#depoimentos">Resultados</a>
-      <a href="#aplicar" class="btn btn-primary nav-cta">Aplicar para uma vaga</a>
+      <a href="https://chk.eduzz.com/E9OG84D5WB" class="btn btn-primary nav-cta">Garantir minha vaga</a>
     </nav>
   </div>
 </header>
@@ -326,7 +336,7 @@ footer{background:var(--cream-2);padding:60px 0 36px;border-top:1px solid var(--
       <h1 class="reveal d1">Organize sua vida para <em>prosperar</em> de forma saudável e sustentável</h1>
       <p class="hero-sub reveal d2">Um método que une autoconhecimento, conscientização e ação para você superar bloqueios emocionais, fortalecer sua mentalidade e construir uma vida que realmente funciona. Sem viver sobrecarregada, sem ficar presa ao ciclo da sobrevivência.</p>
       <div class="hero-cta-row reveal d3">
-        <a href="#aplicar" class="btn btn-primary">Aplicar para uma vaga <span class="arrow">&rarr;</span></a>
+        <a href="https://chk.eduzz.com/E9OG84D5WB" class="btn btn-primary">Quero entrar na mentoria <span class="arrow">&rarr;</span></a>
         <a href="#metodo" class="btn btn-ghost">Conhecer o método</a>
       </div>
       <div class="hero-meta reveal d4">
@@ -525,60 +535,34 @@ footer{background:var(--cream-2);padding:60px 0 36px;border-top:1px solid var(--
   </div>
 </section>
 
-<!-- APLICAR / FORMULÁRIO -->
+<!-- OFERTA / COMPRA -->
 <section class="sec apply" id="aplicar">
   <div class="wrap apply-grid">
     <div class="reveal">
-      <span class="eyebrow">Vagas limitadas</span>
-      <h2>Seu lugar pode <em>ser aqui</em></h2>
-      <p class="lead">As vagas são limitadas para garantir um acompanhamento mais próximo e transformador. O primeiro passo é preencher sua aplicação. A partir dela, avaliamos juntos se a mentoria é o caminho ideal para o momento que você vive.</p>
+      <span class="eyebrow">Sua decisão começa agora</span>
+      <h2>Chegou a hora de colocar sua vida em <em>ORDEM</em></h2>
+      <p class="lead">Você já reconheceu o caminho. Autoconhecimento, conscientização e ação não são teoria: são a estrutura que transforma sua saúde, seus relacionamentos, sua profissão e sua prosperidade. A Mentoria Vida em ORDEM Business é onde tudo isso vira prática, com método, direção e acompanhamento próximo ao longo de 9 meses.</p>
+      <p class="lead" style="font-family:'Playfair Display',serif;font-style:italic;font-size:1.35rem;color:var(--tan-soft)">Você pode continuar adiando os seus sonhos para depois, ou pode começar hoje a construir uma vida que funciona.</p>
       <div class="points">
-        <div><span class="dot">&#10003;</span> Para pessoas comprometidas com o próprio crescimento.</div>
-        <div><span class="dot">&#10003;</span> Acompanhamento próximo durante toda a jornada de 9 meses.</div>
-        <div><span class="dot">&#10003;</span> Avaliação individual para entender o seu momento.</div>
+        <div><span class="dot">&#10003;</span> Jornada completa nos 3 pilares do método Vida em ORDEM.</div>
+        <div><span class="dot">&#10003;</span> Encontros ao vivo, plano de ação individual e comunidade exclusiva.</div>
+        <div><span class="dot">&#10003;</span> Vagas limitadas para garantir proximidade e profundidade.</div>
       </div>
     </div>
     <div class="reveal d1">
-      <div class="form-card">
-        <form id="applyForm" novalidate>
-          <h3>Aplicação para uma vaga</h3>
-          <p class="fsub">Preencha seus dados e nossa equipe entrará em contato.</p>
-          <div class="field">
-            <label for="nome">Nome completo</label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
-          </div>
-          <div class="field">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
-          </div>
-          <div class="field">
-            <label for="whatsapp">WhatsApp</label>
-            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required />
-          </div>
-          <div class="field">
-            <label for="momento">Qual seu maior desafio hoje?</label>
-            <select id="momento" name="momento" required>
-              <option value="" disabled selected>Selecione uma opção</option>
-              <option>Organização financeira</option>
-              <option>Sobrecarga e falta de tempo</option>
-              <option>Clareza profissional / nova renda</option>
-              <option>Autoconhecimento e bloqueios emocionais</option>
-              <option>Saúde e qualidade de vida</option>
-              <option>Vários desses ao mesmo tempo</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="mensagem">Conte um pouco sobre o seu momento (opcional)</label>
-            <textarea id="mensagem" name="mensagem" placeholder="O que te trouxe até aqui?"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar minha aplicação <span class="arrow">&rarr;</span></button>
-          <p class="form-note">Ao enviar, você concorda em ser contactada pela equipe da Mentoria Vida em ORDEM Business.</p>
-        </form>
-        <div class="form-success" id="formSuccess">
-          <div class="ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <h3 class="serif">Aplicação enviada!</h3>
-          <p>Recebemos seus dados. Em breve nossa equipe entrará em contato para conversar sobre o seu momento. Obrigada por dar esse passo.</p>
-        </div>
+      <div class="offer-card">
+        <span class="offer-tag">Mentoria Vida em ORDEM Business</span>
+        <h3 class="serif">Sua vaga na próxima turma</h3>
+        <p class="offer-sub">Tudo o que você precisa para organizar sua vida e prosperar de forma saudável e sustentável, em um só lugar.</p>
+        <ul class="offer-list">
+          <li><span class="oc">&#10003;</span> Método estruturado em 3 pilares</li>
+          <li><span class="oc">&#10003;</span> Encontros ao vivo em grupo</li>
+          <li><span class="oc">&#10003;</span> Plano de ação individual e diagnóstico</li>
+          <li><span class="oc">&#10003;</span> Ferramentas, materiais e gravações</li>
+          <li><span class="oc">&#10003;</span> Comunidade exclusiva e suporte na jornada</li>
+        </ul>
+        <a href="https://chk.eduzz.com/E9OG84D5WB" class="btn btn-primary offer-btn">Quero entrar na mentoria <span class="arrow">&rarr;</span></a>
+        <p class="offer-note">Compra 100% segura · Vagas limitadas para acompanhamento próximo</p>
       </div>
     </div>
   </div>
@@ -593,7 +577,7 @@ footer{background:var(--cream-2);padding:60px 0 36px;border-top:1px solid var(--
         <a href="#metodo">O Método</a>
         <a href="#para-quem">Para quem é</a>
         <a href="#mayra">Mayra Maximiano</a>
-        <a href="#aplicar">Aplicar</a>
+        <a href="https://chk.eduzz.com/E9OG84D5WB">Garantir minha vaga</a>
       </div>
     </div>
     <div class="foot-bottom">
@@ -633,15 +617,6 @@ const io = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
 },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-// form
-const form = document.getElementById('applyForm');
-form.addEventListener('submit', function(e){
-  e.preventDefault();
-  if(!form.checkValidity()){ form.reportValidity(); return; }
-  form.style.display='none';
-  document.getElementById('formSuccess').classList.add('show');
-});
 </script>
 </body>
 </html>
