@@ -160,16 +160,8 @@ section{position:relative}
 /* ===== motion sutil ===== */
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 @keyframes heroZoom{from{transform:scale(1.12)}to{transform:scale(1)}}
-@keyframes fadeDown{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:none}}
 .hero-badge{animation:floaty 5.5s ease-in-out infinite}
 .hero-frame img{animation:heroZoom 2.2s var(--ease) both}
-/* revelação dos títulos em wipe vertical */
-.reveal h2{clip-path:inset(0 0 110% 0);transition:clip-path 1s var(--ease) .12s}
-.reveal.in h2{clip-path:inset(0 0 -2% 0)}
-.hero h1{clip-path:inset(0 0 110% 0);transition:opacity .9s var(--ease),transform .9s var(--ease),clip-path 1.15s var(--ease)}
-.hero h1.in{clip-path:inset(0 0 -2% 0)}
-/* eyebrow desce suave no load do hero */
-.hero .eyebrow.reveal.in{animation:fadeDown .8s var(--ease) both}
 
 /* ---------- letter / story ---------- */
 .story{background:var(--cream-2)}
@@ -328,7 +320,6 @@ footer{background:var(--cream-2);padding:60px 0 36px;border-top:1px solid var(--
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .reveal{opacity:1!important;transform:none!important}
-  .reveal h2,.hero h1{clip-path:none!important}
 }
 </style>
 </head>
